@@ -2,13 +2,14 @@
 
 ## Equipe:
 
-- Gabriel D. Kasten
-- Gustavo Henrique Costa
-- Lucas Mendes Israel
+- Arthur Henrique Tscha Vieira
+- Rafael Rodrigues Ferreira de Andrade
 
 ## Visão Geral
 
-Este projeto implementa uma versão **completamente refatorada** dos algoritmos bio-inspirados para resolver o Problema da Mochila 0/1. A refatoração foi baseada nas técnicas do livro "Refactoring" de Martin Fowler, resultando em código mais limpo, manutenível e extensível.
+Este projeto implementa uma versão **completamente refatorada** dos algoritmos bio-inspirados para resolver o Problema
+da Mochila 0/1. A refatoração foi baseada nas técnicas do livro "Refactoring" de Martin Fowler, resultando em código
+mais limpo, manutenível e extensível.
 
 ## 🔄 Principais Melhorias da Refatoração
 
@@ -16,38 +17,38 @@ Este projeto implementa uma versão **completamente refatorada** dos algoritmos 
 
 1. **Código Duplicado Eliminado**
 
-   - Função `gerar_instancia_aleatoria` centralizada em `DataGenerator`
-   - Função `avaliar` unificada em `KnapsackEvaluator`
-   - Estrutura `main()` padronizada
+    - Função `gerar_instancia_aleatoria` centralizada em `DataGenerator`
+    - Função `avaliar` unificada em `KnapsackEvaluator`
+    - Estrutura `main()` padronizada
 
 2. **Coesão Melhorada**
 
-   - Separação clara de responsabilidades
-   - Classes especializadas para cada função
-   - Configurações isoladas em módulos específicos
+    - Separação clara de responsabilidades
+    - Classes especializadas para cada função
+    - Configurações isoladas em módulos específicos
 
 3. **Acoplamento Reduzido**
 
-   - Interfaces bem definidas entre componentes
-   - Estratégias intercambiáveis (Strategy Pattern)
-   - Dependências injetadas via construtor
+    - Interfaces bem definidas entre componentes
+    - Estratégias intercambiáveis (Strategy Pattern)
+    - Dependências injetadas via construtor
 
 4. **Testes Implementados**
 
-   - Testes unitários abrangentes
-   - Validação automática de regressões
-   - Cobertura das classes principais
+    - Testes unitários abrangentes
+    - Validação automática de regressões
+    - Cobertura das classes principais
 
 5. **Nomeação Melhorada**
 
-   - Nomes descritivos e consistentes
-   - Convenções padronizadas
-   - Documentação clara
+    - Nomes descritivos e consistentes
+    - Convenções padronizadas
+    - Documentação clara
 
 6. **Estrutura Organizada**
-   - Magic numbers eliminados
-   - Métodos pequenos e focados
-   - Hierarquia de classes bem definida
+    - Magic numbers eliminados
+    - Métodos pequenos e focados
+    - Hierarquia de classes bem definida
 
 ## 🏗️ Arquitetura Refatorada
 
@@ -153,7 +154,7 @@ result = algorithm.solve(problem)
 ## 📊 Comparação de Performance
 
 | Métrica                  | Versão Original | Versão Refatorada | Melhoria                     |
-| ------------------------ | --------------- | ----------------- | ---------------------------- |
+|--------------------------|-----------------|-------------------|------------------------------|
 | Linhas de Código         | ~400            | ~1200             | +200% (mais funcionalidades) |
 | Duplicação               | Alta            | Eliminada         | -100%                        |
 | Cobertura de Testes      | 0%              | 85%+              | +85%                         |
@@ -257,4 +258,6 @@ Este projeto é desenvolvido para fins acadêmicos como parte do curso de Algori
 
 ---
 
-**Nota**: Esta versão refatorada demonstra como aplicar técnicas profissionais de desenvolvimento de software para melhorar significativamente a qualidade, manutenibilidade e extensibilidade do código, mantendo a funcionalidade original intacta.
+**Nota**: Esta versão refatorada demonstra como aplicar técnicas profissionais de desenvolvimento de software para
+melhorar significativamente a qualidade, manutenibilidade e extensibilidade do código, mantendo a funcionalidade
+original intacta.
